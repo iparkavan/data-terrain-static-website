@@ -1,11 +1,11 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { BsCalendarDate } from "react-icons/bs";
 import { MdAccessTime } from "react-icons/md";
 
 interface MeetingTableProps {
   name: string;
-  userImage: string;
+  userImage: StaticImageData;
 }
 
 const MeetingTable: React.FC<MeetingTableProps> = ({ name, userImage }) => {

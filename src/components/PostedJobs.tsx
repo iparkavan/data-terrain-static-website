@@ -2,16 +2,16 @@ import React from "react";
 import WhiteCard from "./UI/WhiteCard";
 import { FaEllipsisVertical } from "react-icons/fa6";
 import path from "path";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Angular from "../../public/Angular.png";
 import { FaArrowUpLong } from "react-icons/fa6";
 
 interface PostedJobsProps {
-  image: string;
+  image: StaticImageData;
   role: string;
 }
 
-const PostedJobs: React.FC<PostedJobsProps> = ({ role, image, bg }) => {
+const PostedJobs: React.FC<PostedJobsProps> = ({ role, image }) => {
   return (
     <div className="w-[240px] h-[280px] bg-[#ffffff] drop-shadow-lg">
       <div className="flex items-center justify-between p-2 m-2 border-b-2 border-[#d6d6d6]">
@@ -21,8 +21,7 @@ const PostedJobs: React.FC<PostedJobsProps> = ({ role, image, bg }) => {
             // fill
             width={25}
             height={25}
-            alt="Angular
-          "
+            alt="Angular"
           />
           <h2 className="text-sm">{role}</h2>
         </div>

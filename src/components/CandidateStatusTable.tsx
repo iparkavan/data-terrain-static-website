@@ -11,6 +11,7 @@ import { Icon } from "next/dist/lib/metadata/types/metadata-types";
 import { totalmem } from "os";
 import { GrFormView } from "react-icons/gr";
 import { IoClose } from "react-icons/io5";
+import { IconType } from "react-icons";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -19,7 +20,6 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
-    
   },
 }));
 
@@ -39,11 +39,11 @@ function createData(
   position: string,
   level_1: string,
   level_2: string,
-  level_3: string | Icon,
-  level_4: string | Icon,
+  level_3: string | any,
+  level_4: string | any,
   TotalMarks: string,
-  status: string,
-  action: Icon
+  status: any,
+  action: any
 ) {
   return {
     job,
@@ -120,7 +120,7 @@ const rows = [
         color="#d12323"
       />
     </div>,
-    <div className="flex items-center justify-center  ">
+    <div className="flex items-center justify-center">
       <IoClose
         className="w-6 h-6 p-1 rounded-full bg-[#fce2e2]"
         color="#d12323"
@@ -167,6 +167,7 @@ const rows = [
     </div>
   ),
 ];
+
 
 export default function CandidateStatusTable() {
   return (

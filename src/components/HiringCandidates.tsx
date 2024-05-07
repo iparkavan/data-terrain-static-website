@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface HiringCandidatesProps {
-  userImage: string;
+  userImage: StaticImageData;
 }
 
 const HiringCandidates: React.FC<HiringCandidatesProps> = ({ userImage }) => {
