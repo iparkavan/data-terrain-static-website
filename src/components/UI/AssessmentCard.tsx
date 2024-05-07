@@ -8,7 +8,7 @@ const AssessmentCard = () => {
     <div className="w-[550px] h-[320px] bg-gradient-to-tr from-[#0A66C2] to-[#5994CE] drop-shadow-lg rounded-md ">
       <div className="flex">
         <div className="flex flex-col gap-7 p-12">
-          <div className="w-24 h-24 bg-white flex items-center justify-center">
+          <div className="w-24 h-24 rounded-md bg-white flex items-center justify-center">
             <IoDocumentTextOutline className="w-20 h-20" color="#0a66c2" />
           </div>
           <div className="text-4xl font-bold text-white">0033</div>
