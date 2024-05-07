@@ -80,9 +80,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-center justify-end gap-6">
-                    <div className="bg-[#ffffff] drop-shadow-lg p-2 flex items-center justify-between gap-3 rounded-sm">
+                    <div className="bg-[#ffffff] border-2 border-[#0a66c2] p-2 flex items-center justify-between gap-3 rounded-md">
                       <span>Months</span>
-                      <IoIosArrowDown className="w-6 h-6" color="#0a66c2" />
+                      <IoIosArrowDown className="w-6 h-6" />
                     </div>
                   </div>
                 </div>
