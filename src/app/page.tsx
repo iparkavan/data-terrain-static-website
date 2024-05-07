@@ -64,7 +64,7 @@ export default function Home() {
           {/* Application INfo */}
           <div className="flex w-full gap-4 mt-10">
             <div className="flex item-center justify-start gap-4">
-              <WhiteCard className={"min-w-[950px] h-[320px]"}>
+              <WhiteCard className={"min-w-[1000px] h-[320px]"}>
                 <div className="flex items-center justify-between px-6 pt-2">
                   <div className="flex items-center justify-start gap-12">
                     <h2 className="text-xl font-semibold">
