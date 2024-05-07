@@ -19,6 +19,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
+    
   },
 }));
 
@@ -173,33 +174,33 @@ export default function CandidateStatusTable() {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Job ID</StyledTableCell>
-            <StyledTableCell align="right">Name</StyledTableCell>
-            <StyledTableCell align="right">Position</StyledTableCell>
-            <StyledTableCell align="right">1st Level</StyledTableCell>
-            <StyledTableCell align="right">2nd Level</StyledTableCell>
-            <StyledTableCell align="right">3rd Level</StyledTableCell>
-            <StyledTableCell align="right">4nd Level</StyledTableCell>
-            <StyledTableCell align="right">Total Marks</StyledTableCell>
-            <StyledTableCell align="right">Status</StyledTableCell>
-            <StyledTableCell align="right">Actions</StyledTableCell>
+            <StyledTableCell align="center">Job ID</StyledTableCell>
+            <StyledTableCell align="center">Name</StyledTableCell>
+            <StyledTableCell align="center">Position</StyledTableCell>
+            <StyledTableCell align="center">1st Level</StyledTableCell>
+            <StyledTableCell align="center">2nd Level</StyledTableCell>
+            <StyledTableCell align="center">3rd Level</StyledTableCell>
+            <StyledTableCell align="center">4nd Level</StyledTableCell>
+            <StyledTableCell align="center">Total Marks</StyledTableCell>
+            <StyledTableCell align="center">Status</StyledTableCell>
+            <StyledTableCell align="center">Actions</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name}>
-              <StyledTableCell component="th" scope="row">
+              <StyledTableCell component="th" align="center" scope="row">
                 {row.job}
               </StyledTableCell>
-              <StyledTableCell align="right">{row.name}</StyledTableCell>
-              <StyledTableCell align="right">{row.position}</StyledTableCell>
-              <StyledTableCell align="right">{row.level_1}</StyledTableCell>
-              <StyledTableCell align="right">{row.level_2}</StyledTableCell>
-              <StyledTableCell align="right">{row.level_3}</StyledTableCell>
-              <StyledTableCell align="right">{row.level_4}</StyledTableCell>
-              <StyledTableCell align="right">{row.TotalMarks}</StyledTableCell>
-              <StyledTableCell align="right">{row.status}</StyledTableCell>
-              <StyledTableCell align="right">{row.action}</StyledTableCell>
+              <StyledTableCell align="center">{row.name}</StyledTableCell>
+              <StyledTableCell align="center">{row.position}</StyledTableCell>
+              <StyledTableCell align="center">{row.level_1}</StyledTableCell>
+              <StyledTableCell align="center">{row.level_2}</StyledTableCell>
+              <StyledTableCell align="center">{row.level_3}</StyledTableCell>
+              <StyledTableCell align="center">{row.level_4}</StyledTableCell>
+              <StyledTableCell align="center">{row.TotalMarks}</StyledTableCell>
+              <StyledTableCell align="center">{row.status}</StyledTableCell>
+              <StyledTableCell align="center">{row.action}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

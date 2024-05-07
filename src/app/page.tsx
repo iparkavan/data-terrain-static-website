@@ -121,7 +121,9 @@ export default function Home() {
                 <div className="flex items-center justify-between px-8 pt-6">
                   <div className="flex items-center justify-center gap-24">
                     <h2 className="text-xl font-semibold">Posted Jobs</h2>
-                    <span className="underline text-[#0a66c2]">View All</span>
+                    <span className="underline text-[#0a66c2] font-semibold">
+                      View All
+                    </span>
                   </div>
                   <div className="flex items-center justify-end gap-6">
                     {/* <FaEllipsisVertical /> */}
@@ -135,7 +137,7 @@ export default function Home() {
                     </div>
                     <div className="bg-[#ffffff] drop-shadow-lg p-3 flex items-center justify-between gap-3 rounded-md">
                       <IoFilter className="w-6 h-6" color="#0a66c2" />
-                      <span>Filters</span>
+                      <span className="font-semibold">Filters</span>
                     </div>
                   </div>
                 </div>
@@ -159,7 +161,9 @@ export default function Home() {
                 <div className="flex items-center justify-between px-8 pt-6">
                   <div className="flex items-center justify-center gap-24">
                     <h2 className="text-xl font-semibold">Candidate Status</h2>
-                    <span className="underline text-[#0a66c2]">View All</span>
+                    <span className="underline text-[#0a66c2] font-semibold">
+                      View All
+                    </span>
                   </div>
                   <div className="flex items-center justify-end gap-6">
                     {/* <FaEllipsisVertical /> */}
@@ -173,7 +177,7 @@ export default function Home() {
                     </div>
                     <div className="bg-[#ffffff] drop-shadow-lg p-3 flex items-center justify-between gap-3 rounded-md">
                       <IoFilter className="w-6 h-6" color="#0a66c2" />
-                      <span>Filters</span>
+                      <span className="font-semibold">Filters</span>
                     </div>
                   </div>
                 </div>
@@ -188,7 +192,7 @@ export default function Home() {
             </div>
 
             {/* flex 2 */}
-            <div className="w-[300px] h-[200px]">
+            <div className="w-[300px]">
               <div className="bg-[#ffffff] rounded-lg drop-shadow-lg flex items-center justify-center">
                 <DateCalendar />
               </div>
@@ -196,7 +200,9 @@ export default function Home() {
               <div className="w-full mt-12">
                 <div className="flex w-full items-center justify-between">
                   <h1 className="text-xl">Upcomings</h1>
-                  <span className="underline text-[#0a66c2]">View All</span>
+                  <span className="underline text-[#0a66c2] font-semibold">
+                    View All
+                  </span>
                 </div>
 
                 <div className="mt-6 flex flex-col gap-10">
@@ -221,7 +227,9 @@ export default function Home() {
               <div className="w-full mt-12">
                 <div className="flex w-full items-center justify-between">
                   <h1 className="text-xl">Activity</h1>
-                  <span className="underline text-[#0a66c2]">View All</span>
+                  <span className="underline text-[#0a66c2] font-semibold">
+                    View All
+                  </span>
                 </div>
 
                 <div className="mt-6 flex flex-col gap-10">
@@ -234,7 +242,9 @@ export default function Home() {
               <div className="w-full mt-12">
                 <div className="flex w-full items-center justify-between">
                   <h1 className="text-xl">Hiring Candidates</h1>
-                  <span className="underline text-[#0a66c2]">View All</span>
+                  <span className="underline text-[#0a66c2] font-semibold">
+                    View All
+                  </span>
                 </div>
 
                 <div className="mt-6 flex flex-col gap-10">
@@ -247,13 +257,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* <div className="w-full">
-          <WhiteCard className={"w-[1100px] h-[350px]"}>
-            <div className="flex items-center justify-between p-8">
-            </div>
-          </WhiteCard>
-        </div> */}
         </div>
       </main>
     </LocalizationProvider>
