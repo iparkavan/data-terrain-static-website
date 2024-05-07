@@ -12,7 +12,7 @@ const AssessmentCard = () => {
             <IoDocumentTextOutline className="w-20 h-20" color="#0a66c2" />
           </div>
           <div className="text-4xl font-bold text-white">0033</div>
-          <span className="text-white">New Assessment's</span>
+          <span className="text-white">New Assessment&apos;s</span>
         </div>
         <div className="relative">
           <div className="relative w-24 h-[120px] left-8 top-6">
