@@ -94,7 +94,7 @@ export default function Home() {
 
           {/* Today's Interview Meeting info */}
 
-          <div className="w-full flex justify-between gap-4">
+          <div className="w-full flex justify-start gap-4">
             {/* flex 1 */}
             <div className="flex flex-col gap-4">
               <WhiteCard className={"w-[1100px] h-[470px]"}>
