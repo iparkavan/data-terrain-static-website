@@ -12,7 +12,7 @@ import { LuFileSearch } from "react-icons/lu";
 const Sidebar = () => {
   return (
     <div className="fixed left-0 w-24 top-32 h-screen p-4 bg-[#ffffff] drop-shadow-lg rounded-tr-[30px]">
-      <div className="w-full flex flex-col items-center justify-center gap-10">
+      <div className="w-full flex flex-col items-center justify-center gap-12">
         <GrAppsRounded className="w-6 h-6" color="#0a66c2" />
         <GrDocumentConfig className="w-6 h-6" color="#091316" />
         <RiContactsBook3Line className="w-6 h-6" color="#091316" />

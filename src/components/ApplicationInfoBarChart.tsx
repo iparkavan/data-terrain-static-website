@@ -174,7 +174,7 @@ const chartSetting = {
     },
   ],
   series: [{ dataKey: "seoul", valueFormatter }],
-  height: 250,
+  height: 270,
   sx: {
     [`& .${axisClasses.directionY} .${axisClasses.label}`]: {
       transform: "translateX(-10px)",
@@ -200,6 +200,7 @@ export default function ApplicationInfoBarChart() {
       /> */}
       <BarChart
         dataset={dataset}
+        // width={900}
         slotProps={{
           bar: {
             clipPath: `inset(0px round 5px 5px 0px 0px)`,

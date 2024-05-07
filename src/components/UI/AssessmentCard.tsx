@@ -5,7 +5,7 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 
 const AssessmentCard = () => {
   return (
-    <div className="w-full h-[300px] bg-gradient-to-tr from-[#0A66C2] to-[#5994CE] drop-shadow-lg rounded-md ">
+    <div className="w-[600px] h-[320px] bg-gradient-to-tr from-[#0A66C2] to-[#5994CE] drop-shadow-lg rounded-md ">
       <div className="flex">
         <div className="flex flex-col gap-7 p-12">
           <div className="w-24 h-24 bg-white flex items-center justify-center">
@@ -14,8 +14,8 @@ const AssessmentCard = () => {
           <div className="text-4xl font-bold text-white">0033</div>
           <span className="text-white">New Assessment&apos;s</span>
         </div>
-        <div className="relative">
-          <div className="relative w-24 h-[120px] left-8 top-6">
+        <div className="relative ml-20">
+          <div className="relative w-24 h-[120px] top-8">
             <Image src={AssistantLady} alt="#assistantLady" fill />
           </div>
           <div className="relative w-48 h-[250px] left-24 bottom-[160px]">

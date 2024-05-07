@@ -51,7 +51,7 @@ export default function Home() {
             </span>
           </div>
           <div>
-            <button className="bg-[#0a66c2] text-white p-3 rounded-md">
+            <button className="bg-[#0a66c2] text-white px-6 py-3 text-sm rounded-md">
               Task Details
             </button>
           </div>
@@ -63,33 +63,39 @@ export default function Home() {
         >
           {/* Application INfo */}
           <div className="flex w-full gap-4 mt-10">
-            <WhiteCard className={"w-[2400px] h-[300px]"}>
-              <div className="flex items-center justify-between px-6 pt-2">
-                <div className="flex items-center justify-start gap-12">
-                  <h2 className="text-xl font-semibold">Application’s Info</h2>
-                  <div className="flex items-center justify-between gap-2">
-                    <div className="w-5 h-5 bg-[#277acc] rounded-md" />
-                    <span className="text-sm">Received</span>
+            <div className="flex item-center justify-start gap-4">
+              <WhiteCard className={"min-w-[950px] h-[320px]"}>
+                <div className="flex items-center justify-between px-6 pt-2">
+                  <div className="flex items-center justify-start gap-12">
+                    <h2 className="text-xl font-semibold">
+                      Application’s Info
+                    </h2>
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="w-5 h-5 bg-[#277acc] rounded-md" />
+                      <span className="text-sm">Received</span>
+                    </div>
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="w-5 h-5 bg-[#426281] rounded-md" />
+                      <span className="text-sm">Processed</span>
+                    </div>
                   </div>
-                  <div className="flex items-center justify-between gap-2">
-                    <div className="w-5 h-5 bg-[#426281] rounded-md" />
-                    <span className="text-sm">Processed</span>
+                  <div className="flex items-center justify-end gap-6">
+                    <div className="bg-[#ffffff] drop-shadow-lg p-2 flex items-center justify-between gap-3 rounded-sm">
+                      <span>Months</span>
+                      <IoIosArrowDown className="w-6 h-6" color="#0a66c2" />
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-center justify-end gap-6">
-                  <div className="bg-[#ffffff] drop-shadow-lg p-2 flex items-center justify-between gap-3 rounded-sm">
-                    <span>Months</span>
-                    <IoIosArrowDown className="w-6 h-6" color="#0a66c2" />
-                  </div>
-                </div>
-              </div>
 
-              <Divider />
-              <div className="px-4">
-                <ApplicationInfoBarChart />
+                <Divider />
+                <div className="px-4">
+                  <ApplicationInfoBarChart />
+                </div>
+              </WhiteCard>
+              <div className="w-full">
+                <AssessmentCard />
               </div>
-            </WhiteCard>
-            <AssessmentCard />
+            </div>
           </div>
 
           {/* Today's Interview Meeting info */}
@@ -97,7 +103,7 @@ export default function Home() {
           <div className="w-full flex justify-start gap-4">
             {/* flex 1 */}
             <div className="flex flex-col gap-4">
-              <WhiteCard className={"w-[1100px] h-[470px]"}>
+              <WhiteCard className={"w-[1250px] h-[470px]"}>
                 <div className="flex items-center justify-between px-8 pt-8">
                   <h2 className="text-xl font-semibold">
                     Today Interviews Meetings Info
@@ -117,7 +123,7 @@ export default function Home() {
               </WhiteCard>
 
               {/* <div className="w-full"> */}
-              <WhiteCard className={"w-[1100px] h-[480px]"}>
+              <WhiteCard className={"w-[1250px] h-[500px]"}>
                 <div className="flex items-center justify-between px-8 pt-6">
                   <div className="flex items-center justify-center gap-24">
                     <h2 className="text-xl font-semibold">Posted Jobs</h2>
@@ -157,7 +163,7 @@ export default function Home() {
                 </div>
               </WhiteCard>
 
-              <WhiteCard className={"w-[1100px] h-[600px]"}>
+              <WhiteCard className={"w-[1250px] h-[600px]"}>
                 <div className="flex items-center justify-between px-8 pt-6">
                   <div className="flex items-center justify-center gap-24">
                     <h2 className="text-xl font-semibold">Candidate Status</h2>
