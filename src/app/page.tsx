@@ -41,8 +41,8 @@ import uiux from "../../public/ui.png";
 export default function Home() {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <main className="">
-        <div className="flex w-full items-center justify-between">
+      <main className="w-full">
+        <div className="flex items-center justify-between">
           <div className="flex flex-col gap-5">
             <h1 className="text-xl font-semibold">HR Employee</h1>
             <span className="text-sm">
@@ -57,53 +57,46 @@ export default function Home() {
           </div>
         </div>
 
-        <div
-          // className="grid grid-cols-3 gap-4 mt-10"
-          className="w-full flex flex-col gap-4"
-        >
+        <div className="flex flex-col mt-6 justify-start gap-4">
           {/* Application INfo */}
-          <div className="flex w-full gap-4 mt-10">
-            <div className="flex item-center justify-start gap-4">
-              <WhiteCard className={"min-w-[1000px] h-[320px]"}>
-                <div className="flex items-center justify-between px-6 pt-2">
-                  <div className="flex items-center justify-start gap-12">
-                    <h2 className="text-xl font-semibold">
-                      Application’s Info
-                    </h2>
-                    <div className="flex items-center justify-between gap-2">
-                      <div className="w-5 h-5 bg-[#277acc] rounded-md" />
-                      <span className="text-sm">Received</span>
-                    </div>
-                    <div className="flex items-center justify-between gap-2">
-                      <div className="w-5 h-5 bg-[#426281] rounded-md" />
-                      <span className="text-sm">Processed</span>
-                    </div>
+          <div className="flex item-center justify-start gap-4">
+            <WhiteCard className={"min-w-[62%] h-[300px]"}>
+              <div className="flex items-center justify-between px-6 pt-2">
+                <div className="flex items-center justify-start gap-12">
+                  <h2 className="text-lg font-semibold">Application’s Info</h2>
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="w-5 h-5 bg-[#277acc] rounded-md" />
+                    <span className="text-sm">Received</span>
                   </div>
-                  <div className="flex items-center justify-end gap-6">
-                    <div className="bg-[#ffffff] border-2 border-[#0a66c2] p-2 flex items-center justify-between gap-3 rounded-md">
-                      <span>Months</span>
-                      <IoIosArrowDown className="w-6 h-6" />
-                    </div>
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="w-5 h-5 bg-[#426281] rounded-md" />
+                    <span className="text-sm">Processed</span>
                   </div>
                 </div>
-
-                <Divider />
-                <div className="px-4">
-                  <ApplicationInfoBarChart />
+                <div className="flex items-center justify-end gap-6">
+                  <div className="bg-[#ffffff] border-2 border-[#0a66c2] p-1 flex items-center justify-between gap-3 rounded-md">
+                    <span>Months</span>
+                    <IoIosArrowDown className="w-6 h-6" />
+                  </div>
                 </div>
-              </WhiteCard>
-              <div className="w-full">
-                <AssessmentCard />
               </div>
+
+              <Divider />
+              <div className="px-4">
+                <ApplicationInfoBarChart />
+              </div>
+            </WhiteCard>
+            <div className="">
+              <AssessmentCard />
             </div>
           </div>
 
           {/* Today's Interview Meeting info */}
 
-          <div className="w-full flex justify-start gap-4">
+          <div className="flex justify-start gap-4">
             {/* flex 1 */}
-            <div className="flex flex-col gap-4">
-              <WhiteCard className={"w-[1250px] h-[470px]"}>
+            <div className="flex w-[80%] flex-col justify-start gap-4">
+              <WhiteCard className={"h-[430px]"}>
                 <div className="flex items-center justify-between px-8 pt-8">
                   <h2 className="text-xl font-semibold">
                     Today Interviews Meetings Info
@@ -114,7 +107,7 @@ export default function Home() {
                 </div>
 
                 <Divider />
-                <div className="pt-4 px-8 mt-6">
+                <div className="pt-3 px-8 mt-3">
                   <div className="flex items-center justify-start gap-6 overflow-auto custom-scrollbar">
                     <MeetingTable name="John Smith" userImage={jhonsmith} />
                     <MeetingTable name="Maria" userImage={mariya} />
@@ -123,8 +116,8 @@ export default function Home() {
               </WhiteCard>
 
               {/* <div className="w-full"> */}
-              <WhiteCard className={"w-[1250px] h-[500px]"}>
-                <div className="flex items-center justify-between px-8 pt-6">
+              <WhiteCard className={"h-[450px]"}>
+                <div className="flex items-center justify-between px-8 pt-4">
                   <div className="flex items-center justify-center gap-24">
                     <h2 className="text-xl font-semibold">Posted Jobs</h2>
                     <span className="underline text-[#0a66c2] font-semibold">
@@ -133,7 +126,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center justify-end gap-6">
                     {/* <FaEllipsisVertical /> */}
-                    <div className="bg-[#ffffff] drop-shadow-lg p-3 flex items-center justify-between rounded-md">
+                    <div className="bg-[#ffffff] drop-shadow-lg p-2 flex items-center justify-between rounded-md">
                       <input
                         type="text"
                         placeholder="Search"
@@ -141,14 +134,14 @@ export default function Home() {
                       />
                       <CiSearch className="w-6 h-6" color="#6e6e6e" />
                     </div>
-                    <div className="bg-[#ffffff] drop-shadow-lg p-3 flex items-center justify-between gap-3 rounded-md">
+                    <div className="bg-[#ffffff] drop-shadow-lg p-2 flex items-center justify-between gap-3 rounded-md">
                       <IoFilter className="w-6 h-6" color="#0a66c2" />
                       <span className="font-semibold">Filters</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="flex items-center justify-start gap-24 pt-4 border-b-2 border-[#6e6e6e] mx-6">
+                <div className="flex items-center justify-start gap-24 pt-2 border-b-2 border-[#6e6e6e] mx-6">
                   <h2 className="text-xl">Active Jobs</h2>
                   <span className="text-xl">Pending Jobs</span>
                 </div>
@@ -163,7 +156,7 @@ export default function Home() {
                 </div>
               </WhiteCard>
 
-              <WhiteCard className={"w-[1250px] h-[600px]"}>
+              <WhiteCard className={"h-[600px]"}>
                 <div className="flex items-center justify-between px-8 pt-6">
                   <div className="flex items-center justify-center gap-24">
                     <h2 className="text-xl font-semibold">Candidate Status</h2>
@@ -198,7 +191,7 @@ export default function Home() {
             </div>
 
             {/* flex 2 */}
-            <div className="w-[300px]">
+            <div className="w-[20%]">
               <div className="bg-[#ffffff] rounded-lg drop-shadow-lg flex items-center justify-center">
                 <DateCalendar />
               </div>

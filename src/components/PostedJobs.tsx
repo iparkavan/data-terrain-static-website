@@ -13,7 +13,7 @@ interface PostedJobsProps {
 
 const PostedJobs: React.FC<PostedJobsProps> = ({ role, image }) => {
   return (
-    <div className="w-[260px] h-[300px] bg-[#ffffff] drop-shadow-lg">
+    <div className="w-[230px] h-[280px] bg-[#ffffff] drop-shadow-lg">
       <div className="flex items-center justify-between p-2 m-2 border-b-2 border-[#d6d6d6]">
         <div className="flex items-center justify-start gap-1">
           <Image

@@ -191,7 +191,7 @@ export default function ApplicationInfoBarChart() {
   >("middle");
 
   return (
-    <div style={{ width: "100%" }}>
+    <div>
       {/* <TickParamsSelector
         tickPlacement={tickPlacement}
         tickLabelPlacement={tickLabelPlacement}
